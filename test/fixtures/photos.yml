@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  latitude: 1.5
+  longitude: 1.5
+  path: MyText
+  valoration: 1
+  size: 1
+  width: 1
+  height: 1
+
+two:
+  latitude: 1.5
+  longitude: 1.5
+  path: MyText
+  valoration: 1
+  size: 1
+  width: 1
+  height: 1

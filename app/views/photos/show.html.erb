@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Latitude:</b>
+  <%= @photo.latitude %>
+</p>
+
+<p>
+  <b>Longitude:</b>
+  <%= @photo.longitude %>
+</p>
+
+<p>
+  <b>Path:</b>
+  <%= @photo.path %>
+</p>
+
+<p>
+  <b>Valoration:</b>
+  <%= @photo.valoration %>
+</p>
+
+<p>
+  <b>Size:</b>
+  <%= @photo.size %>
+</p>
+
+<p>
+  <b>Width:</b>
+  <%= @photo.width %>
+</p>
+
+<p>
+  <b>Height:</b>
+  <%= @photo.height %>
+</p>
+
+
+<%= link_to 'Edit', edit_photo_path(@photo) %> |
+<%= link_to 'Back', photos_path %>

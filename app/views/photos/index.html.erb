@@ -1,0 +1,35 @@
+<h1>Listing photos</h1>
+
+<table>
+  <tr>
+    <th>Latitude</th>
+    <th>Longitude</th>
+    <th>Path</th>
+    <th>Valoration</th>
+    <th>Size</th>
+    <th>Width</th>
+    <th>Height</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @photos.each do |photo| %>
+  <tr>
+    <td><%= photo.latitude %></td>
+    <td><%= photo.longitude %></td>
+    <td><%= photo.path %></td>
+    <td><%= photo.valoration %></td>
+    <td><%= photo.size %></td>
+    <td><%= photo.width %></td>
+    <td><%= photo.height %></td>
+    <td><%= link_to 'Show', photo %></td>
+    <td><%= link_to 'Edit', edit_photo_path(photo) %></td>
+    <td><%= link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Photo', new_photo_path %>
