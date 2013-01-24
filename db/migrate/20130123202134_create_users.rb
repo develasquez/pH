@@ -7,7 +7,7 @@ class CreateUsers < ActiveRecord::Migration
       t.integer :photo_id
       t.text :status
       t.integer :rank
-      t.boolean :delete
+      t.boolean :idDeleted
       t.integer :city_id
 
       t.timestamps

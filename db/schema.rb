@@ -82,17 +82,4 @@ ActiveRecord::Schema.define(:version => 20130123204548) do
     t.datetime "updated_at", :null => false
   end
 
-  create_table "users", :force => true do |t|
-    t.string   "name"
-    t.string   "email"
-    t.string   "password"
-    t.integer  "photo_id"
-    t.text     "status"
-    t.integer  "rank"
-    t.boolean  "isDeleted"
-    t.integer  "city_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
 end
