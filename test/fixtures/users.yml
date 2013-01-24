@@ -7,7 +7,7 @@ one:
   photo_id: 1
   status: MyText
   rank: 1
-  delete: false
+  idDeleted: false
   city_id: 1
 
 two:
@@ -17,5 +17,5 @@ two:
   photo_id: 1
   status: MyText
   rank: 1
-  delete: false
+  idDeleted: false
   city_id: 1

@@ -13,6 +13,16 @@
 
 ActiveRecord::Schema.define(:version => 20130123204548) do
 
+  create_table "comments", :force => true do |t|
+    t.string   "user_id"
+    t.string   "title"
+    t.text     "message"
+    t.integer  "valoration"
+    t.boolean  "delete"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "photos", :force => true do |t|
     t.float    "latitude"
     t.float    "longitude"
