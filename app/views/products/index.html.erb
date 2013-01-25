@@ -9,6 +9,7 @@
     <th></th>
     <th></th>
     <th></th>
+    <th></th>
   </tr>
 
 <% @products.each do |product| %>
@@ -17,13 +18,14 @@
     <td><%= product.descripcion %></td>
     <td><%= product.codigo_barras %></td>
     <td><%= product.valoracion %></td>
-    <td><%= link_to 'Show', product %></td>
-    <td><%= link_to 'Edit', edit_product_path(product) %></td>
-    <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Ver', product %></td>
+    <td><%= link_to 'Editar', edit_product_path(product) %></td>
+    <td><%= link_to 'Eliminar', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Ver Precios', prices_path(:product_id => product.id) %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Product', new_product_path %>
+<%= link_to 'Nuevo Producto', new_product_path %>
