@@ -19,7 +19,9 @@
   <b>Valoracion:</b>
   <%= @product.valoracion %>
 </p>
+prices?product_id=2
 
-
+<%= link_to 'ver Precios', prices_path(:product_id => @product.id) %>
+<%= link_to 'Crear Precios', new_price_path(:product_id => @product.id) %>
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>

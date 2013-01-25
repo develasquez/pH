@@ -27,6 +27,14 @@
     <%= f.label :definitive %><br />
     <%= f.check_box :definitive %>
   </div>
+  <div class="field">
+    <%= f.label :product_id %><br />
+    <% if params[:product_id] %>
+    <%= f.number_field :product_id ,:value => params[:product_id] %>
+    <%else%>
+    <%= f.number_field :product_id  %>
+    <% end %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>
