@@ -11,14 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130123204548) do
+ActiveRecord::Schema.define(:version => 20130125171424) do
 
   create_table "comments", :force => true do |t|
     t.string   "user_id"
     t.string   "title"
     t.text     "message"
     t.integer  "valoration"
-    t.boolean  "isdeleted"
+    t.boolean  "delete"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(:version => 20130123204548) do
     t.boolean  "definitive"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.integer  "product_id"
   end
 
   create_table "product_photos", :force => true do |t|
@@ -78,6 +79,19 @@ ActiveRecord::Schema.define(:version => 20130123204548) do
     t.integer  "user_id"
     t.float    "latitude"
     t.float    "longitude"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "password"
+    t.integer  "photo_id"
+    t.text     "status"
+    t.integer  "rank"
+    t.boolean  "idDeleted"
+    t.integer  "city_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
