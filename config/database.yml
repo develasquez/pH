@@ -23,7 +23,7 @@ development:
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
   # domain sockets, so uncomment these lines.
-  host: localhost
+  host: 106.187.55.9
   #port: 5432
 
   # Schema search path. The server defaults to $user,public
@@ -45,7 +45,7 @@ test:
   pool: 5
   username: linodepostgre
   password: devenew1
-  host: localhost
+  host: 106.187.55.9
 production:
   adapter: postgresql
   encoding: unicode
@@ -53,4 +53,4 @@ production:
   pool: 5
   username: linodepostgre
   password: devenew1
-  host: localhost
+  host: 106.187.55.9

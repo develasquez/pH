@@ -37,6 +37,16 @@ class PricesController < ApplicationController
     @price = Price.find(params[:id])
   end
 
+  # GET /prices/1
+  # GET /prices/1.json
+  def showForProduct
+    @price = Price.find(params[:product_id])
+    respond_to do |format|
+      format.html # show.html.erb
+      format.json { render json: @price }
+    end
+  end
+
   # POST /prices
   # POST /prices.json
   def create
