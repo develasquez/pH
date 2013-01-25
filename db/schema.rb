@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(:version => 20130123204548) do
     t.string   "title"
     t.text     "message"
     t.integer  "valoration"
-    t.boolean  "delete"
+    t.boolean  "isdeleted"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
