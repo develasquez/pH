@@ -1,0 +1,9 @@
+config.action_mailer.delivery_method = :smtp
+config.action_mailer.smtp_settings = {
+  :address              => "smtp.gmail.com",
+  :port                 => 587,
+  :domain               => '106.187.55.9',
+  :user_name            => 'felipe.velasquezc@gmail.com',
+  :password             => 'devenew1',
+  :authentication       => 'plain',
+  :enable_starttls_auto => true  }
